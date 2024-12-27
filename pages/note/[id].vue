@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { useNoteStore } from '../store/notes.js'
+import { useNoteStore } from '~/store/notes.js'
 import NoteForm from '~/components/NoteForm.vue'
 
 const noteStore = useNoteStore()

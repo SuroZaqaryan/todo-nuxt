@@ -19,7 +19,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
-import { useNoteStore } from '../store/notes.js'
+import { useNoteStore } from '~/store/notes.js'
 import NoteCard from '~/components/NoteCard.vue'
 
 const noteStore = useNoteStore()
