@@ -3,13 +3,13 @@
     <div>
       <h3 class="text-zinc-800 font-bold mb-5 text-lg truncate">{{ note.title }}</h3>
       <ul class="mb-3">
-        <li v-for="(todo, index) in note.todos.slice(0, 3)" :key="index"
+        <li v-for="(todo, index) in note.todos.slice(0, 4)" :key="index"
           class="text-base flex items-center font-bold text-zinc-700">
           <img v-if="todo.done" src="~/assets/icons/check.svg" class="mr-2" alt="done" />
           <img v-else src="~/assets/icons/close.svg" class="mr-2" alt="close" />
           {{ todo.text }}
         </li>
-        <li v-if="note.todos.length > 3" class="text-sm italic text-gray-500">...and more</li>
+        <li v-if="note.todos.length > 4" class="text-sm italic text-gray-500">...and more</li>
       </ul>
     </div>
     <div class="flex items-center justify-end gap-1.5">
